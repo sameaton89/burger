@@ -1,0 +1,15 @@
+img {
+    height: 75%;
+    width: 75%;
+}
+
+.change-sleep {
+    color: red;
+    float: right;
+}
+
+.change-sleep a:link {
+    color: red;
+
+
+}
