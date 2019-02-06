@@ -1,15 +1,18 @@
 img {
-    height: 75%;
-    width: 75%;
+    width: 100%;
+    height: 100%;
 }
 
-.change-sleep {
+.devour-burger {
     color: red;
-    float: right;
+    /* margin-left: 50px; */
+    /* float: right; */
 }
 
 .change-sleep a:link {
     color: red;
+}
 
-
+.change-sleep:hover {
+    color: red;
 }

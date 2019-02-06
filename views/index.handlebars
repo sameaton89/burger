@@ -1,63 +1,57 @@
 
 <div class="container">
-<div class="row">
-  <div class="col-md-1">
-  </div>
-  <img src="/assets/img/goodburger.jpg">
-  <div class="col-md-1">
-    {{!--  --}}
-  </div>
+  <div class="row">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-8">
+      <img src="/assets/img/goodburger.jpg" class="img-responsive">
+    </div>
 </div>
 
 <div class="row">
-  <div class="col-md-1">
-
+  <div class="col-md-2">
   </div>
   <div class="col-md-5">
 
-<h2>Burgers Unconsumed</h2>
+    <h2>Burgers Unconsumed</h2>
 
-  {{#each burgers}}
-    {{#unless this.devoured}}
-   <div> {{this.burger_name}}
-      {{> burgers/burger-block devoured=false}}</div>
-    {{/unless}}
-  {{/each}}
-
-</div>
-<div class="col-md-5" id="consumed">
-
-<h2>Burgers Consumed</h2>
-
-
-  {{#each burgers}}
-    {{#if this.devoured}}
-        <div>{{this.burger_name}}</div>
-
-      {{!-- {{> burgers/burger-block devoured=false}} --}}
-    {{/if}}
-  {{/each}}
+      {{#each burgers}}
+        {{#unless this.devoured}}
+      <div> {{this.burger_name}}
+          {{> burgers/burger-block devoured=false}}</div>
+        {{/unless}}
+      {{/each}}
 
 </div>
+  <div class="col-md-5" id="consumed">
+
+    <h2>Burgers Consumed</h2>
+
+
+      {{#each burgers}}
+        {{#if this.devoured}}
+            <div>{{this.burger_name}}</div>
+
+          {{!-- {{> burgers/burger-block devoured=false}} --}}
+        {{/if}}
+      {{/each}}
+
+    </div>
   <div class="col-md-1">
-    
   </div>
 </div>
 
-<h2>Add a Burger</h2>
-<form class="create-form">
-
-
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
-  </div>
-
-
-
-  <button type="submit">Add Burger</button>
-
-
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8" id="add-burger">
+    <h2>Add a Burger</h2>
+    <form class="create-form">
+      <div class="form-group">
+        <label for="ca">Burger Name:</label>
+        <input class="form-control" type="text" id="ca" name="name">
+      </div>
+      <button type="submit" class="btn btn-primary mb-2">Add Burger</button>
+    </form>
+</div>
+</div>
 </div>
